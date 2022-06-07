@@ -37,6 +37,20 @@ public class ControlFlowExercises {
             System.out.println(i);
         }
 
+        for(int i = 0; i <= 100; i += 2){
+            System.out.println(i);
+        }
+
+        for (int x = 100; x >=-10; x -= 5 ){
+            System.out.println(x);
+        }
+
+        for (long y = 2; y <= 1000000; y = y*y) {
+            System.out.println(y);
+        }
+
+
+
 
 
     }
