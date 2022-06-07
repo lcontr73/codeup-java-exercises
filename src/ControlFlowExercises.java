@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
         //Create an integer variable i with a value of 5.
@@ -48,16 +50,20 @@ public class ControlFlowExercises {
 //        for (long y = 2; y <= 1000000; y = y*y) {
 //            System.out.println(y);
 //        }
-        int i;
-        for (i = 1; i <= 100; i++)
-            if ((i % 15) == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            }else
-                System.out.println(i);
+//        int i;
+//        for (i = 1; i <= 100; i++)
+//            if ((i % 15) == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            }else
+//                System.out.println(i);
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What number would you like to go up to?");
+        String userInput = scanner.nextLine();
+        System.out.printf("Here is your table! %n%s%n", userInput);
     }
 }
