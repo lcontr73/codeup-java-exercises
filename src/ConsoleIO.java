@@ -8,10 +8,10 @@ public class ConsoleIO {
         String timeOfDay = "afternoon";
         byte week = 11;
         double someNumber = 123.456789;
-//        System.out.printf("Good %s, %s!%n", timeOfDay, cohort);
+        System.out.printf("Good %s, %s!%n", timeOfDay, cohort);
 //        System.out.printf("This is the %dth week of %s cohort. %n", week, cohort);
 //        System.out.println("This is going to appear on another line");
-//        System.out.printf("The chosen number is %8.2f%n", someNumber);
+        System.out.printf("The chosen number is %8.2f%n", someNumber);
 
         // Listen for input
         Scanner scanner = new Scanner(System.in);
