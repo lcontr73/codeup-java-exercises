@@ -26,11 +26,18 @@ public class ControlFlowExercises {
 
         //Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
 
-        long z = 2;
-        do {
-            System.out.println(z);
-            z = z*z;
-        } while (z < 100000);
+//        long z = 2;
+//        do {
+//            System.out.println(z);
+//            z = z*z;
+//        } while (z < 100000);
+
+        //Refactor the previous two exercises to use a for loop instead.
+        for(int i = 5; i <= 15; i += 1){
+            System.out.println(i);
+        }
+
+
 
     }
 }
