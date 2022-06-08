@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        //Create an integer variable i with a value of 5.
+//        //Create an integer variable i with a value of 5.
 //        int i = 5;
-        //Create a while loop that runs so long as i is less than or equal to 15
+//        //Create a while loop that runs so long as i is less than or equal to 15
 //        while (i <= 15) {
-//            System.out.println(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 
@@ -16,7 +16,7 @@ public class ControlFlowExercises {
 //        do {
 //            System.out.println(x);
 //            x = x + 2;
-//        } while (x >= -10);
+//        } while (x <= 100);
 
 
         //Alter your loop to count backwards by 5's from 100 to -10.
@@ -50,10 +50,15 @@ public class ControlFlowExercises {
 //        for (long y = 2; y <= 1000000; y = y*y) {
 //            System.out.println(y);
 //        }
+
+        //Fizzbuzz One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+
 //        int i;
 //        for (i = 1; i <= 100; i++)
-//            if ((i % 15) == 0) {
+//            // Have to put this one first because if we put it at the bottom it will do the other checks first before hitting this one.
+//            if (i % 3 == 0 && i % 5 == 0) {
 //                System.out.println("FizzBuzz");
+//                // can use all if statements by using continue after each statement
 //            } else if (i % 5 == 0) {
 //                System.out.println("Buzz");
 //            } else if (i % 3 == 0) {
@@ -61,9 +66,28 @@ public class ControlFlowExercises {
 //            }else
 //                System.out.println(i);
 
+        //Display a table of powers.
+
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What number would you like to go up to?");
-        String userInput = scanner.nextLine();
-        System.out.printf("Here is your table! %n%s%n", userInput);
+//        System.out.println("What number would you like to go up to?");
+//        int userInput = scanner.nextInt();
+//        System.out.println("Here is your table:");
+//        System.out.printf("%nNumber" + " | " + "squared" + " | " + "cubed");
+//        System.out.printf("%n------" + " | " + "-------" + " | " + "-----");
+//        // write loop that starts at 1 and counts up to
+//        for (int i = 1; i <= userInput; i++) {
+//            System.out.printf("%n%s", i + "      | " + i * i + "       | " + i*i*i);
+//        }
+
+        //Convert given number grades into letter grades.
+        System.out.println("What is your number grade from 0 to 100?");
+        int userGrade = scanner.nextInt();
+        if (userGrade <= 59) {
+            System.out.println("F: 59-0");
+        }
+
+
+
     }
 }
