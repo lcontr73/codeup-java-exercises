@@ -70,22 +70,22 @@ public class ControlFlowExercises {
 
 
         Scanner scanner = new Scanner(System.in);
-//        System.out.println("What number would you like to go up to?");
-//        int userInput = scanner.nextInt();
-//        System.out.println("Here is your table:");
-//        System.out.printf("%nNumber" + " | " + "squared" + " | " + "cubed");
-//        System.out.printf("%n------" + " | " + "-------" + " | " + "-----");
-//        // write loop that starts at 1 and counts up to
-//        for (int i = 1; i <= userInput; i++) {
-//            System.out.printf("%n%s", i + "      | " + i * i + "       | " + i*i*i);
-//        }
+        System.out.println("What number would you like to go up to?");
+        int userInput = scanner.nextInt();
+        System.out.println("Here is your table:");
+        System.out.printf("%nNumber" + " | " + "squared" + " | " + "cubed");
+        System.out.printf("%n------" + " | " + "-------" + " | " + "-----");
+        // write loop that starts at 1 and counts up to
+        for (int i = 1; i <= userInput; i++) {
+            System.out.printf("%n%s", i + "      | " + i * i + "       | " + i*i*i);
+        }
 
         //Convert given number grades into letter grades.
-        System.out.println("What is your number grade from 0 to 100?");
-        int userGrade = scanner.nextInt();
-        if (userGrade <= 59) {
-            System.out.println("F: 59-0");
-        }
+//        System.out.println("What is your number grade from 0 to 100?");
+//        int userGrade = scanner.nextInt();
+//        if (userGrade <= 59) {
+//            System.out.println("F: 59-0");
+//        }
 
 
 
