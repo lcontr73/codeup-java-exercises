@@ -48,10 +48,10 @@ public class Input {
             return userInput;
         }
 
-//        public double getDouble(double min, double max) {
-//        String prompt = "Enter an integer between " + min + " and " max;
-//            System.out.println(prompt);
-//
-//        }
+        public double getDouble(String prompt) {
+            System.out.println(prompt);
+            return scanner.nextDouble();
+
+        }
 
 }
