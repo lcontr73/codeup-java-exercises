@@ -19,4 +19,8 @@ public class Vehicle {
     public void makeNoise() {
         System.out.println(this.getName() + " vroom, vroom");
     }
+    public Vehicle(){}
+    public Vehicle(String name){
+        this.name = name;
+    }
 }

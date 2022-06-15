@@ -19,5 +19,15 @@ public class GarageTest {
 //        Garage.makeNoise(vehicles);
 //    }
 
+    public static void main(String[] args) {
+        Garage garageTest = new Garage("Garage Test");
+
+        Vehicle[] garageVehicles = new Vehicle[3];
+        garageVehicles[0] = new Car("Pinto");
+        garageVehicles[1] = new Car("Chevy");
+        garageVehicles[2] = new Car("Toyota");
+        garageTest.retrieveVehicles();
+    }
+
 }
 
