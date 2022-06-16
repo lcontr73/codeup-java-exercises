@@ -1,4 +1,4 @@
 package Shapes;
 
-abstract class Shape {
+abstract public class Shape {
 }
