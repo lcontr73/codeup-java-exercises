@@ -10,9 +10,9 @@ public class ConsoleExercises {
 
         //Prompt a user to enter a integer and store that value in an int variable using the nextInt method. What happens if you input something that is not an integer?
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter an integer:");
-        int userInput = scanner.nextInt();
-        System.out.printf("You entered %d%n", userInput);
+//        System.out.println("Enter an integer:");
+//        int userInput = scanner.nextInt();
+//        System.out.printf("You entered %d%n", userInput);
 
         //Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
 //          My solution:
