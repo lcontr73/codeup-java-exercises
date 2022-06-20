@@ -31,23 +31,23 @@ public class ControlFlowExercises {
         long z = 2;
         do {
             System.out.println(z);
-            z = z*z;
+            z = z * z;
         } while (z < 100000);
 
         //Refactor the previous two exercises to use a for loop instead.
-        for(int a = 5; a <= 15; a += 1){
+        for (int a = 5; a <= 15; a += 1) {
             System.out.println(a);
         }
 
-        for(int b = 0; b <= 100; b += 2){
+        for (int b = 0; b <= 100; b += 2) {
             System.out.println(b);
         }
 
-        for (int c = 100; c >=-10; c -= 5 ){
+        for (int c = 100; c >= -10; c -= 5) {
             System.out.println(c);
         }
 
-        for (long d = 2; d <= 1000000; d = d*d) {
+        for (long d = 2; d <= 1000000; d = d * d) {
             System.out.println(d);
         }
 
@@ -63,7 +63,7 @@ public class ControlFlowExercises {
                 System.out.println("Buzz");
             } else if (p % 3 == 0) {
                 System.out.println("Fizz");
-            }else
+            } else
                 System.out.println(p);
 
         //Display a table of powers.
@@ -77,29 +77,31 @@ public class ControlFlowExercises {
         System.out.printf("%n------" + " | " + "-------" + " | " + "-----");
         // write loop that starts at 1 and counts up to
         for (int e = 1; e <= userInput; e++) {
-            System.out.printf("%n%s", e + "      | " + e * e + "       | " + e*e*e);
+            System.out.printf("%n%s", e + "      | " + e * e + "       | " + e * e * e);
         }
 
         //Convert given number grades into letter grades.
-        System.out.println("\nWhat is your number grade from 0 to 100?");
-        int userGrade = scanner.nextInt();
-        if (userGrade <= 100 && userGrade >= 88) {
-            System.out.println("A: 100-88");
-        }
-        if (userGrade <= 87 && userGrade >= 80) {
-            System.out.println("B: 87-80");
-        }
-        if (userGrade <= 79 && userGrade >= 67) {
-            System.out.println("C: 79-67");
-        }
-        if (userGrade <= 66 && userGrade >= 60) {
-            System.out.println("D: 66-60");
-        }
-        if (userGrade <= 59) {
-            System.out.println("F: 59-0");
-        }
-
-
+        boolean continueGrades = true;
+        do {
+            System.out.println("\nWhat is your number grade from 0 to 100?");
+            int userGrade = scanner.nextInt();
+            if (userGrade <= 100 && userGrade >= 88) {
+                System.out.println("A: 100-88");
+            } if (userGrade <= 87 && userGrade >= 80) {
+                System.out.println("B: 87-80");
+            } else if (userGrade <= 79 && userGrade >= 67) {
+                System.out.println("C: 79-67");
+            } else if (userGrade <= 66 && userGrade >= 60) {
+                System.out.println("D: 66-60");
+            }else if (userGrade <= 59) {
+                System.out.println("F: 59-0");
+            }
+            System.out.println("Would you like to continue? (y/n) ");
+            String userResponse = scanner.next();
+            if (!userResponse.equalsIgnoreCase("y")){
+                continueGrades = false;
+            }
+        } while (continueGrades);
 
 
     }
