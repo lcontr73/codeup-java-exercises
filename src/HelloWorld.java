@@ -5,8 +5,9 @@ public class HelloWorld {
     int myFavoriteNumber = 42;
         System.out.println(myFavoriteNumber);
 
-//    String myString = "This is my new string variable";
-//        System.out.println(myString);
+
+    String myString = "This is my new string variable";
+        System.out.println(myString);
 
 //        char myString = 3;
 //        System.out.println(myString);
