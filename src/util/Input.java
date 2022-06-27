@@ -11,8 +11,7 @@ public class Input {
 
     public String getString() {
         System.out.println("Enter a string:");
-        String userInput = scanner.nextLine();
-        return userInput;
+        return scanner.nextLine();
     }
 
     public int getInt() {
@@ -44,8 +43,7 @@ public class Input {
 
         public double getDouble (){
             System.out.println("Enter a number");
-            double userInput = scanner.nextDouble();
-            return userInput;
+            return scanner.nextDouble();
         }
 
         public double getDouble(String prompt) {

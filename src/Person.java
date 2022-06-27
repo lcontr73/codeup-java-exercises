@@ -9,16 +9,14 @@ public class Person {
         this.name = name;
     }
 
-    public Person(String newName) {
-        name = newName;
-    }
 
     public void sayHello(){
-//TODO: print a message to the console using the person's name
         System.out.printf("Hello %s%n",  name);
     }
 
-
+    public Person(String newName) {
+        name = newName;
+    }
 
     public static void main(String[] args) {
         Person p1 = new Person("Leonard");
