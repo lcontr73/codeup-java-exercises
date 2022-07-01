@@ -1,4 +1,4 @@
-package Shapes;
+package shapes;
 
 abstract public class Quadrilateral extends Shape implements Measurable{
 
