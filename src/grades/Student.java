@@ -10,6 +10,10 @@ public class Student {
         this.name = name;
     }
 
+    public Student(String name, ArrayList<Object> objects) {
+        this.name = name;
+    }
+
 
     //this allows for the output of each student plus their array of grades. I have to convert it back to a string to get the Arraylist to populate
     @Override
